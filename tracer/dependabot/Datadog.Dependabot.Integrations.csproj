@@ -29,7 +29,7 @@
     <!-- Integration: AWSSDK.Kinesis -->
     <!--    Assembly: AWSSDK.Kinesis -->
     <!-- Latest package https://www.nuget.org/packages/AWSSDK.Kinesis/3.7.401.11 -->
-    <PackageReference Include="AWSSDK.Kinesis" Version="3.7.401.11" />
+    <PackageReference Include="AWSSDK.Kinesis" Version="3.7.402.1" />
 
     <!-- Integration: AWSSDK.SimpleNotificationService -->
     <!--    Assembly: AWSSDK.SimpleNotificationService -->

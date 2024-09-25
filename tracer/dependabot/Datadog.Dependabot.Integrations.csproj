@@ -49,7 +49,7 @@
     <!-- Integration: Confluent.Kafka -->
     <!--    Assembly: Confluent.Kafka -->
     <!-- Latest package https://www.nuget.org/packages/Confluent.Kafka/2.5.2 -->
-    <PackageReference Include="Confluent.Kafka" Version="2.5.2" />
+    <PackageReference Include="Confluent.Kafka" Version="2.5.3" />
 
     <!-- Integration: Couchbase.NetClient -->
     <!--    Assembly: Couchbase.NetClient -->

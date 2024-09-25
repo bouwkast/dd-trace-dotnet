@@ -34,7 +34,7 @@
     <!-- Integration: AWSSDK.SimpleNotificationService -->
     <!--    Assembly: AWSSDK.SimpleNotificationService -->
     <!-- Latest package https://www.nuget.org/packages/AWSSDK.SimpleNotificationService/3.7.400.13 -->
-    <PackageReference Include="AWSSDK.SimpleNotificationService" Version="3.7.400.13" />
+    <PackageReference Include="AWSSDK.SimpleNotificationService" Version="3.7.400.24" />
 
     <!-- Integration: AWSSDK.SQS -->
     <!--    Assembly: AWSSDK.SQS -->

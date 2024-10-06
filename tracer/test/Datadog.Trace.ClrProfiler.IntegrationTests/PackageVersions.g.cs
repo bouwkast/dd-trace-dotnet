@@ -72,9 +72,15 @@ namespace Datadog.Trace.ClrProfiler.IntegrationTests
 
         public static IEnumerable<object[]> XUnit => IsAllMinorPackageVersions ? PackageVersionsLatestMinors.XUnit : PackageVersionsLatestSpecific.XUnit;
 
+        public static IEnumerable<object[]> XUnit => IsAllMinorPackageVersions ? PackageVersionsLatestMinors.XUnit : PackageVersionsLatestSpecific.XUnit;
+
+        public static IEnumerable<object[]> NUnit => IsAllMinorPackageVersions ? PackageVersionsLatestMinors.NUnit : PackageVersionsLatestSpecific.NUnit;
+
         public static IEnumerable<object[]> NUnit => IsAllMinorPackageVersions ? PackageVersionsLatestMinors.NUnit : PackageVersionsLatestSpecific.NUnit;
 
         public static IEnumerable<object[]> MSTest => IsAllMinorPackageVersions ? PackageVersionsLatestMinors.MSTest : PackageVersionsLatestSpecific.MSTest;
+
+        public static IEnumerable<object[]> MSTest2 => IsAllMinorPackageVersions ? PackageVersionsLatestMinors.MSTest2 : PackageVersionsLatestSpecific.MSTest2;
 
         public static IEnumerable<object[]> MSTest2 => IsAllMinorPackageVersions ? PackageVersionsLatestMinors.MSTest2 : PackageVersionsLatestSpecific.MSTest2;
 

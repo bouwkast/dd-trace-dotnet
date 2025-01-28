@@ -211,7 +211,7 @@
     <!-- Integration: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter -->
     <!--    Assembly: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter -->
     <!-- Latest package https://www.nuget.org/packages/MSTest.TestAdapter/3.6.0 -->
-    <PackageReference Include="MSTest.TestAdapter" Version="3.5.2" />
+    <PackageReference Include="MSTest.TestAdapter" Version="3.7.3" />
 
     <!-- Integration: MySql.Data -->
     <!--    Assembly: MySql.Data -->

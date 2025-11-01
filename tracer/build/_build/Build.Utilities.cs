@@ -430,9 +430,24 @@ partial class Build
                .Description("Regenerates the 'build' solutions based on the 'master' solution")
                .Executes(() =>
                 {
+                    var generatedSolutionFile = RootDirectory / "Datadog.Trace.Samples.g.sln";
+
+                    // Skip regeneration if the generated solution exists and is newer than the main solution
+                    if (EnableIncrementalOptimizations && File.Exists(generatedSolutionFile))
+                    {
+                        var generatedTime = File.GetLastWriteTimeUtc(generatedSolutionFile);
+                        var sourceTime = File.GetLastWriteTimeUtc(Solution);
+
+                        if (generatedTime > sourceTime)
+                        {
+                            Logger.Information("Generated solution is up-to-date, skipping regeneration. Use --incremental-build false to force regeneration.");
+                            return;
+                        }
+                    }
+
                     // Create a copy of the "full solution"
                     var sln = ProjectModelTasks.CreateSolution(
-                        fileName: RootDirectory / "Datadog.Trace.Samples.g.sln",
+                        fileName: generatedSolutionFile,
                         solutions: new[] { Solution },
                         randomizeProjectIds: false);
 

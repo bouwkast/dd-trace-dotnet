@@ -94,6 +94,11 @@ partial class Build : NukeBuild
     [Parameter("Enable or Disable fast developer loop")]
     readonly bool FastDevLoop;
 
+    [Parameter("Enable incremental build optimizations (skips unnecessary downloads, restores, and regenerations). Default: true for local builds, false for CI builds.")]
+    readonly bool? IncrementalBuild;
+
+    bool EnableIncrementalOptimizations => IncrementalBuild ?? !IsServerBuild;
+
     [Parameter("The directory containing the tool .nupkg file")]
     readonly AbsolutePath ToolSource;
 

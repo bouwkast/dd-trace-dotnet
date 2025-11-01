@@ -48,19 +48,6 @@ namespace LogsInjection.NLog
             Both
         }
 
-        private enum DirectLogSubmission
-        {
-            /// <summary>
-            /// DirectLogSubmission is enabled.
-            /// </summary>
-            Enable,
-
-            /// <summary>
-            /// DirectLogSubmission is disabled.
-            /// </summary>
-            Disable
-        }
-
         public static int Main(string[] args)
         {
             // This test creates and unloads an appdomain
